@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NAGCARLAN FOREST RESORT - ROOMS</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Slackside+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="common.css">
+       
+       
+
+    </head>
+   
+    <body class="bg-light">
+         <!-- NAVBAR & LOGO -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-lg-3 py-lg-2 shadow-sm sticky-top">
+            <div class="container-fluid">
+                <img class="logo" src="logo.png" alt="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active me-2" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me" href="rooms.html">Rooms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me" href="amenities.html">Amenities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me" href="contactUs.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <button type="button" class="btn btn-outline-dark shadow-none me-lg-3 me-2" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            LOGIN
+                        </button>
+                        <button type="button" class="btn btn-outline-dark shadow-none me-lg-2 me-3" data-bs-toggle="modal" data-bs-target="#registerModal">
+                            REGISTER
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+       <div class="my-5 px-4">
+          <h2 class="fw-bold h-font text-center">ROOMS</h2>
+          <div class="h-line bg-dark"></div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-12 mb-lg-0 mb-4 px-lg-0">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-white rounded shadow">
+                        <div class="container-fluid flex-lg-column align-items-stretch">
+                          <h4 class="mt-2">FILTERS</h4>
+                          <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#filterDropdown" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse flex-column align-items-stretch" id="filterDropdown">
+                                <div class="border bg-light p-3 rounded mb-3">
+                                    <h5 class="mb-3" style="font-size: 18px;">CHECK AVAILABILITY</h5>
+                                    <label class="form-label">Check-in</label>
+                                    <input type="date" class="form-control shadow-none mb-3">
+                                    <label class="form-label">Check-out</label>
+                                    <input type="date" class="form-control shadow-none">
+                                        
+                                </div>
+                                <div class="border bg-light p-3 rounded mb-3">
+                                    <h5 class="mb-3" style="font-size: 18px;">AMENITIES</h5>
+                                     <div class="mb-2">
+                                        <input type="checkbox" id="a1" class="form-check-input shadow-none me-1">
+                                        <label class="form-check-label" for="a1">Amenity one</label>
+                                     </div>
+                                     <div class="mb-2">
+                                        <input type="checkbox" id="a2" class="form-check-input shadow-none me-1">
+                                        <label class="form-check-label" for="a2">Amenity two</label>
+                                     </div>
+                                     <div class="mb-2">
+                                        <input type="checkbox" id="a3" class="form-check-input shadow-none me-1">
+                                        <label class="form-check-label" for="a3">Amenity three</label>
+                                     </div>
+                                     <div class="mb-2">
+                                        <input type="checkbox" id="a3" class="form-check-input shadow-none me-1">
+                                        <label class="form-check-label" for="a3">Amenity four</label>
+                                     </div>
+                                </div>
+                                <div class="border bg-light p-3 rounded mb-3">
+                                    <h5 class="mb-3" style="font-size: 18px;">GUESTS</h5>
+                                    <div class="d-flex">
+                                        <div class="me-3">
+                                           <label class="form-label">Adults</label>
+                                           <input type="number" class="form-control shadow-none">
+                                        </div>
+                                        <div>
+                                           <label class="form-label">Children</label>
+                                           <input type="number" class="form-control shadow-none">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="col-lg-9 col-md-12 px-4">
+                    <div class="card mb-4 border-0 shadow">
+                        <div class="row g-0 p-3 align-items-center">
+                          <div class="col-md-5 mb-lg-0 mb-md-0 mb-3">
+                            <div id="carouselExample" class="carousel slide">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="r1.jpeg" class="img-fluid rounded">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="t1.jpeg" class="img-fluid rounded">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="t2.jpeg" class="img-fluid rounded">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            
+                          </div>
+
+                           <div class="col-md-5 px-lg-3 px-md-3 px-0">
+                                <h5 class="mb-2">El Seniorito (Building 2)</h5>
+                                <div class="features mb-2">
+                                    <h6 class="mb-1">Features</h6>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        2nd Floor
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        1 Bedroom
+                                    </span>
+                                    
+                                </div>
+                                <div class="Amenities mb-2">
+                                    <h6 class="mb-1">Inclusions</h6>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                    Free use of Swimming Pool
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                     Breakfast
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        AC
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        LED Television
+                                    </span>
+                                </div>
+                                <div class="guests">
+                                    <h6 class="mb-1">Guests</h6>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">4 Adults</span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">2 Children</span>
+                               </div>
+                          </div>
+                          <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center ">
+                            <h6 class="mb-4">₱2500</h6>
+                            <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Book Now</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 border-0 shadow">
+                        <div class="row g-0 p-3 align-items-center">
+                          <div class="col-md-5 mb-lg-0 mb-md-0 mb-3">
+                            <div id="carouselExample1" class="carousel slide">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="r2.jpeg" class="img-fluid rounded">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="l1.jpeg" class="img-fluid rounded">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="t3.jpeg" class="img-fluid rounded">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                          </div>
+                           <div class="col-md-5 px-lg-3 px-md-3 px-0">
+                                <h5 class="mb-2">La Seniorita (Building 3) </h5>
+                                <div class="features mb-2">
+                                    <h6 class="mb-1">Features</h6>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        2nd Floor
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        1 Bedroom
+                                    </span>
+                                   
+                                </div>
+                                <div class="Amenities mb-2">
+                                    <h6 class="mb-1">Inclusions</h6>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                    Swimming Pool
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        Wifi
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        AC
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        Television
+                                    </span>
+                                </div>
+                                <div class="guests">
+                                    <h6 class="mb-1">Guests</h6>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">4 Adults</span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">2 Children</span>
+                               </div>
+                          </div>
+                          <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center ">
+                            <h6 class="mb-4">₱2700</h6>
+                            <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Book Now</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 border-0 shadow">
+                        <div class="row g-0 p-3 align-items-center">
+                          <div class="col-md-5 mb-lg-0 mb-md-0 mb-3">
+                            <div id="carouselExample2" class="carousel slide">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="r3.jpeg" class="img-fluid rounded">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="s1.jpeg" class="img-fluid rounded">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="t4.jpeg" class="img-fluid rounded">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                          </div>
+                           <div class="col-md-5 px-lg-3 px-md-3 px-0">
+                                <h5 class="mb-2">El Grande Mayor (Building 4)</h5>
+                                <div class="features mb-2">
+                                    <h6 class="mb-1">Features</h6>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        2nd Floor
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        1 Bedroom
+                                    </span>
+                                </div>
+                                <div class="Amenities mb-2">
+                                    <h6 class="mb-1">Inclusions</h6>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                    Swimming Pool
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        Breakfast
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        AC
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        Television
+                                    </span>
+                                </div>
+                                <div class="guests">
+                                    <h6 class="mb-1">Guests</h6>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">6 Adults</span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">3 Children</span>
+                               </div>
+                          </div>
+                          <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center ">
+                            <h6 class="mb-4">₱3500</h6>
+                            <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Book Now</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 border-0 shadow">
+                        <div class="row g-0 p-3 align-items-center">
+                          <div class="col-md-5 mb-lg-0 mb-md-0 mb-3">
+                            <div id="carouselExample3" class="carousel slide">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="r5.jpeg" class="img-fluid rounded">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="t5.jpeg" class="img-fluid rounded">
+                                  </div>
+                                  
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                          </div>
+                           <div class="col-md-5 px-lg-3 px-md-3 px-0">
+                                <h5 class="mb-2">Casa Junto (Building 4)</h5>
+                                <div class="features mb-2">
+                                    <h6 class="mb-1">Features</h6>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        1st Floor
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        1 Bedroom
+                                    </span>
+                                </div>
+                                <div class="Amenities mb-2">
+                                    <h6 class="mb-1">Inclusions</h6>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                    Swimming Pool
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        Breakfast
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        AC
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        Television
+                                    </span>
+                                </div>
+                                <div class="guests">
+                                    <h6 class="mb-1">Guests</h6>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">4 Adults</span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">1 Child</span>
+                               </div>
+                          </div>
+                          <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center ">
+                            <h6 class="mb-4">₱2800</h6>
+                            <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Book Now</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 border-0 shadow">
+                        <div class="row g-0 p-3 align-items-center">
+                          <div class="col-md-5 mb-lg-0 mb-md-0 mb-3">
+                            <div id="carouselExample4" class="carousel slide">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="r6.jpeg" class="img-fluid rounded">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="m1.jpeg" class="img-fluid rounded">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="t6.jpeg" class="img-fluid rounded">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample4" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample4" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                          </div>
+                           <div class="col-md-5 px-lg-3 px-md-3 px-0">
+                                <h5 class="mb-2">Familia Del Grande (Building 5)</h5>
+                                <div class="features mb-2">
+                                    <h6 class="mb-1">Features</h6>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        Mezzanine
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        1 Bedroom
+                                    </span>
+                                </div>
+                                <div class="Amenities mb-2">
+                                    <h6 class="mb-1">Inclusions</h6>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                    Swimming Pool
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        Breakfast
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        AC
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        Towels & Toiletries
+                                    </span>
+                                </div>
+                                <div class="guests">
+                                    <h6 class="mb-1">Guests</h6>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">6 Adults</span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">2 Children</span>
+                               </div>
+                          </div>
+                          <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center ">
+                            <h6 class="mb-4">₱3800</h6>
+                            <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Book Now</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 border-0 shadow">
+                        <div class="row g-0 p-3 align-items-center">
+                          <div class="col-md-5 mb-lg-0 mb-md-0 mb-3">
+                            <div id="carouselExample5" class="carousel slide">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="r7.jpeg" class="img-fluid rounded">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="s2.jpeg" class="img-fluid rounded">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="t7.jpeg" class="img-fluid rounded">
+                                  </div>
+                                  
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample5" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample5" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                          </div>
+                           <div class="col-md-5 px-lg-3 px-md-3 px-0">
+                                <h5 class="mb-2">Espacio Des Amigos (Building 5)</h5>
+                                <div class="features mb-2">
+                                    <h6 class="mb-1">Features</h6>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        3rd Floor
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        Dorm Type 
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        Double deck beds
+                                    </span>
+                                </div>
+                                <div class="Amenities mb-2">
+                                    <h6 class="mb-1">Inclusions</h6>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                    Swimming Pool
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                       Breakfast
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        AC & TV
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        Towels & Toiletries
+                                    </span>
+                                </div>
+                                <div class="guests">
+                                    <h6 class="mb-1">Guests</h6>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">6 Adults</span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">3 Children</span>
+                               </div>
+                          </div>
+                          <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center ">
+                            <h6 class="mb-4">₱3100</h6>
+                            <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Book Now</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 border-0 shadow">
+                        <div class="row g-0 p-3 align-items-center">
+                          <div class="col-md-5 mb-lg-0 mb-md-0 mb-3">
+                            <div id="carouselExample6" class="carousel slide">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="r8.jpeg" class="img-fluid rounded">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="s3.jpeg" class="img-fluid rounded">
+                                  </div>
+                                  
+                                  
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample6" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample6" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                          </div>
+                           <div class="col-md-5 px-lg-3 px-md-3 px-0">
+                                <h5 class="mb-2">Familia Habitacion (Building 5)</h5>
+                                <div class="features mb-2">
+                                    <h6 class="mb-1">Features</h6>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        2nd Floor
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        1 Bedroom
+                                    </span>
+                                </div>
+                                <div class="Amenities mb-2">
+                                    <h6 class="mb-1">Inclusions</h6>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                    Swimming Pool
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        Breakfast
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        AC & TV
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        Toilet & Toiletries
+                                    </span>
+                                </div>
+                                <div class="guests">
+                                    <h6 class="mb-1">Guests</h6>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">4 Adults</span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">2 Children</span>
+                               </div>
+                          </div>
+                          <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center ">
+                            <h6 class="mb-4">₱2800</h6>
+                            <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Book Now</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 border-0 shadow">
+                        <div class="row g-0 p-3 align-items-center">
+                          <div class="col-md-5 mb-lg-0 mb-md-0 mb-3">
+                            <div id="carouselExample7" class="carousel slide">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="r9.jpeg" class="img-fluid rounded">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="s4.jpeg" class="img-fluid rounded">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="s5.jpeg" class="img-fluid rounded">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="s6.jpeg" class="img-fluid rounded">
+                                  </div>
+                                  
+                                  
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample7" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample7" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                          </div>
+                           <div class="col-md-5 px-lg-3 px-md-3 px-0">
+                                <h5 class="mb-2">Casitas (Uno - Tres)</h5>
+                                <div class="features mb-2">
+                                    <h6 class="mb-1">Features</h6>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        Loft Type
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        1 Bedroom
+                                    </span>
+                                </div>
+                                <div class="Amenities mb-2">
+                                    <h6 class="mb-1">Inclusions</h6>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                    Swimming Pool
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        Breakfast
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        AC & TV
+                                    </span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">
+                                        Towels & Toiletries
+                                    </span>
+                                </div>
+                                <div class="guests">
+                                    <h6 class="mb-1">Guests</h6>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">2 Adults</span>
+                                    <span class="badge rounded-pill bg-light text-dark text-wrap">1 Child</span>
+                               </div>
+                          </div>
+                          <div class="col-md-2 mt-lg-0 mt-md-0 mt-4 text-center ">
+                            <h6 class="mb-4">₱2500</h6>
+                            <a href="#" class="btn btn-sm w-100 text-white custom-bg shadow-none mb-2">Book Now</a>
+                            
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+
+        
+        
+        
+
+       
+
+        <!-- Footer -->
+        <div class="container-fluid bg-white mt-5">
+            <div class="row">
+                <div class="col-lg-4 p-4">
+                  <h3 class="h-font fw-bold fs-3 mb-2">Nagcarlan Forest Resort</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+                <div class="col-lg-4 p-4">
+                    <h5>Links</h5>
+                    <a href="index.html" class="d-inline-block mb-2 text-decoration-none">Home</a><br>
+                    <a href="rooms.html" class="d-inline-block mb-2 text-decoration-none">Rooms</a><br>
+                    <a href="amenities.html" class="d-inline-block mb-2 text-decoration-none">Amenities</a><br>
+                    <a href="about.html" class="d-inline-block mb-2 text-decoration-none">About</a><br>
+                    <a href="contactUs.html" class="d-inline-block mb-2 text-decoration-none">Contact Us</a><br>
+                </div>
+                <div class="col-lg-4 p-4">
+                    <h5 class="mb-3">Follow us</h5>
+                    <a href="https://www.facebook.com/NagcarlanForestResort" class="d-inline-block text-dark text-decoration-none mb-2">
+                        <i class="bi bi-facebook me-1"></i>Facebook</span>
+                    </a>
+                    <br>
+                    <a href="https://www.instagram.com/nagcarlanforest?fbclid=IwAR2YVifytwtrBH454j0YknT_pvD0O96Q4ry1fWvT_3oOuJZHlqUeNSAbAwg" 
+                    class="d-inline-block text-dark text-decoration-none">
+                        <i class="bi bi-instagram me-1"></i>Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <h6 class="text-center bg-dark text-white p-3 m-0"></h6>
+
+        <!-- MODAL- LOGIN -->
+        <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form>
+                        <div class="modal-header">
+                         <h5 class="modal-title d-flex align-items-center">
+                            <i class="bi bi-person-circle fs-3 me-2"></i>User Login</h5>
+                         <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label class="form-label">Email address</label required>
+                                <input type="email" class="form-control shadow-none">
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label">Password</label>
+                                <input type="password" class="form-control shadow-none" minlength="8" required>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <button type = "submit" class="btn-dark shadow-none">LOGIN</button>
+                                <a href="javascript: void(0)" class= "text-secondary text-decoration-none">Forgot Password?</a>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL- REGISTER -->
+        <div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <form>
+                        <div class="modal-header">
+                         <h5 class="modal-title d-flex align-items-center">
+                            <i class="bi bi-person-lines-fill fs-3 me-2"></i>User Registration</h5>
+                         <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <span class="badge rounded-pill bg-ligh text-dark mb-3 text-wrap lh-base">
+                            Note: Your details must match with your ID's that will be required during check-in.
+                        </span>
+                        <div class="container-fluid">
+                            <div class = "row">
+                                <div class="col-md-6 ps-0 mb-3">
+                                    <label class="form-label">Name</label required>
+                                    <input type="text" class="form-control shadow-none">
+                                </div>
+                                <div class="col-md-6 p-0 mb-3">
+                                    <label class="form-label">Email</label required>
+                                    <input type="email" class="form-control shadow-none">
+                                </div>
+                                <div class="col-md-6 ps-0 mb-3">
+                                    <label class="form-label">Phone Number</label required>
+                                    <input type="number" class="form-control shadow-none">
+                                </div>
+                                <div class="col-md-6 p-0 mb-3">
+                                    <label class="form-label">Picture</label required>
+                                    <input type="file" class="form-control shadow-none">
+                                </div>
+                                <div class="col-md-12 p-0 mb-3">
+                                    <label class="form-label">Address</label required>
+                                    <textarea class="form-control shadow-none" rows="1"></textarea>
+                                </div>
+                                <div class="col-md-6 ps-0 mb-3">
+                                    <label class="form-label">PIN</label required>
+                                    <input type="number" class="form-control shadow-none">
+                                </div>
+                                <div class="col-md-6 p-0 mb-3">
+                                    <label class="form-label">Date of Birth</label required>
+                                    <input type="date" class="form-control shadow-none">
+                                </div>
+                                <div class="col-md-6 ps-0 mb-3">
+                                    <label class="form-label">Password</label required>
+                                    <input type="password" class="form-control shadow-none">
+                                </div>
+                                <div class="col-md-6 p-0 mb-3">
+                                    <label class="form-label">Confirm Password</label required>
+                                    <input type="password" class="form-control shadow-none">
+                                </div>
+
+                             
+
+                            </div>
+                            <div class="text-center my-1">
+                                <button type = "submit" class="btn-dark shadow-none">REGISTER</button>
+                            </div>
+                       </div>
+                    </form>
+                </div>
+            </div>
+      </div>
+     
+     
+        
+      <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var swiper = new Swiper(".swiper-container", {
+                    spaceBetween: 30,
+                    effect: 'fade',
+                    loop: true, 
+                    autoplay: {
+                        delay:3500,
+                        disableOnInteraction: false,
+                    }
+                });
+            });
+
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </body>
+</html>
