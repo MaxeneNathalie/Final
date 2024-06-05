@@ -1,0 +1,87 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.h-font {
+    font-family: "Poppins", sans-serif;
+}
+
+p{
+    font-size: medium;
+}
+.logo{
+    width:10%;
+    height: auto;
+    padding-right:20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+
+  
+/* For other browsers */
+input[type=number] {
+    appearance: textfield;
+    -webkit-appearanace: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.custom-bg{
+    background-color:#2ec1ac;
+}
+.custom-bg:hover{
+    background-color:#279e8c;
+}
+.availability-form{
+    margin-top: 0;
+    position: relative;
+    z-index: 3 !important;
+}
+
+@media screen and (max-width: 575px){
+    .availability-form{
+    margin-top: 0;
+    padding: 0 35px;
+    }
+}
+
+.h-line{
+    width: 150px;
+    margin: 0 auto;
+    height: 1.7px;
+}
+
+.pop:hover{
+    border-top-color: #2ec1ac !important;
+    transform: scale(1.03);
+    transition: all 0.3s;
+
+}
+
+.box{
+    border-top-color: #2ec1ac !important;
+    transform: scale(1.03);
+    transition: all 0.3s;
+
+}
+
+.custom-alert{
+    position: fixed;
+    top: 25px;
+    right: 25px;
+}
+
+@media screen and (max-width: 992px){
+    #dashboard-menu{
+        height: auto;
+        width: 100%;
+    }
+    #main-content{
+        margin-top: 60px;
+    }
+}
